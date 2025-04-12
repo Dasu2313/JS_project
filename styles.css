@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #867e7e;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.autocomplete-list {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+}
+
+.autocomplete-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.autocomplete-item:hover {
+    background-color: #f0f0f0;
+}
+
+.repos-list {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.repo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.repo-item:last-child {
+    border-bottom: none;
+}
+
+.repo-info {
+    flex-grow: 1;
+}
+
+.repo-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.repo-owner {
+    color: #666;
+    font-size: 14px;
+}
+
+.repo-stars {
+    color: #666;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.delete-btn {
+    background-color: #ffae00;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.delete-btn:hover {
+    background-color: #ffae00a9;
+}
